@@ -14,7 +14,6 @@
 
 <body>
 
-    <!--Navbar-->
     <div class="navbar">
         <div class="logo-details">
 
