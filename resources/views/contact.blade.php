@@ -7,7 +7,7 @@
             <div class="pt-5">
                 <h3 class="pt-4"><b>Contact Us</b></h3>
             </div>
-            <small class="pb-2 pl-2">We are here for you.</small>
+            <small class="pl-2">We are here for you.</small>
         </div>
     </div>
 
