@@ -42,11 +42,9 @@
         <nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-light fixed-top">
             <div class="container"> <a class="navbar-brand d-flex align-items-center" href="#">
 
-                    <a class="navbar-brand" href="/">
-                        <span class="ml-3 font-weight-bold">WIL</span>
-                    </a>
+                    <span class="ml-3 font-weight-bold"><b>WIL</b></apan>
                 </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
-                    <i class="fas fa-bars"></i>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
 
