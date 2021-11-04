@@ -16,18 +16,18 @@ body {
 }
 
 .hr-color-1a {
-    border-top: 4px solid #6497b1;
-    width: 80%;
+    border-top: 4px solid #f47a60;
+    width: 100%;
 }
 
 .hr-color-1b {
-    border-top: 4px solid #ff9a8d;
-    width: 80%;
+    border-top: 4px solid #7fe7dc;
+    width: 100%;
 }
 
 .hr-color-1c {
-    border-top: 4px solid #A3BCB6;
-    width: 80%;
+    border-top: 4px solid #ced7d8;
+    width: 100%;
 }
 
 .abtgrid {
@@ -83,7 +83,7 @@ body {
 .card {
     margin-top: 8px;
     margin-bottom: 8px;
-    border-radius: 10px;
+    border-radius: 28px;
     box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
     -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
     -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);

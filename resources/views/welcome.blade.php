@@ -18,7 +18,7 @@
 <div class="container py-5">
     <div class="row">
         <div class="col-lg-4">
-            <div class="card">
+            <div class="card ">
                 <div class="card-body">
                     <h5 class="card-title"><b>Students</b></h5>
                     <p class="card-text"> The placement of final year Diploma students in an Industry is referred to as a 'work-integrated-learning' placement. Previously, it was also referred to as 'in-service training' or 'cooperative learning'

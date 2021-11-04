@@ -13,8 +13,8 @@
 
     <div class="abtgrid auto-fit pt-4 ">
         <div class="card border-0 ">
-            <div class="card-body justify-content-center text-align-center">
-                <h5 class="card-title"><i class="fa fa-envelope pl-4 pr-2 " style="font-size:16px;color:#aed6dc; vertical-align:baseline;"></i> Email</h5>
+            <div class="card-body justify-content-center text-align-center ">
+                <h5 class="card-title"><i class="fa fa-envelope pl-4 pr-2 " style="font-size:16px;color:#f47a60; vertical-align:baseline;"></i> Email</h5>
                 <div class="hr-color-1a pb-3 pt-0"></div>
                 <p class="card-text pl-4">info@cput-wil.com</p>
 
@@ -22,7 +22,7 @@
         </div>
         <div class="card border-0 ">
             <div class="card-body justify-content-center text-align-center">
-                <h5 class="card-title"> <i class="fa fa-phone pl-4 pr-2 " style="font-size:20px;color:#ff9a8d; vertical-align:baseline;"></i> Phone Number</h5>
+                <h5 class="card-title"> <i class="fa fa-phone pl-4 pr-2 " style="font-size:20px;color:#7fe7dc; vertical-align:baseline;"></i> Phone Number</h5>
                 <div class="hr-color-1b pb-3 pt-0"></div>
                 <span class="card-text pl-4">(+27) 671 0000 000012</span>
 
@@ -30,7 +30,7 @@
         </div>
         <div class="card border-0">
             <div class="card-body justify-content-center text-align-center  ">
-                <h5 class="card-title"><i class="fa fa-map-marker pl-4 pr-2 " style="font-size:20px;color:#A3BCB6; vertical-align:baseline;"></i> Physical Address</h5>
+                <h5 class="card-title"><i class="fa fa-map-marker pl-4 pr-2 " style="font-size:20px;color:#ced7d8; vertical-align:baseline;"></i> Physical Address</h5>
                 <div class="hr-color-1c pb-3 pt-0"></div>
                 <p class="card-text pl-4"> We are virtual
                 </p>
@@ -51,7 +51,7 @@
                     <form>
                         @csrf
                         <div class="form-group">
-                            <h4 class="card-title pt-2 pb-2"><b>Contact nous</b></h4>
+                            <h4 class="card-title pt-2 pb-2"><b>Contact us</b></h4>
                             <small>Due to the need to ask questions of you to obtain the information needed to provide an effective diagnosis or response to your query, we ask you please to submit Technical Support questions to us via the following form or support email.</small>
                             <div class="form-group">
                                 <label>Name</label>
