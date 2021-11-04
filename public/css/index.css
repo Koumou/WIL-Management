@@ -3,12 +3,60 @@
     transition: all .0s;
 }
 
+body {
+    background-color: white;
+}
+
 .dropdown-toggle::after {
     display: none;
 }
 
 .text-decoration-none {
     text-decoration: none!important;
+}
+
+.hr-color-1a {
+    border-top: 4px solid #6497b1;
+    width: 80%;
+}
+
+.hr-color-1b {
+    border-top: 4px solid #ff9a8d;
+    width: 80%;
+}
+
+.hr-color-1c {
+    border-top: 4px solid #A3BCB6;
+    width: 80%;
+}
+
+.abtgrid {
+    display: grid;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.btnsend,
+.btnsend:active,
+.btnsend:visited {
+    outline: none !important;
+    background-color: #aed6dc;
+    color: white;
+}
+
+.btnsend:hover {
+    outline: none !important;
+    background-color: #aed6dc;
+    opacity: 85%;
+    color: white;
 }
 
 

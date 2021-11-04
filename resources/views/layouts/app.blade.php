@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -60,6 +61,9 @@
                         </li>
                         <li class="nav-item px-lg-2 {{Request::is ('about') ? 'active' : ''}}">
                             <a class="nav-link" href="/about"><span class="d-inline-block d-lg-none icon-width"><i class="fa fa-info"></i></span>About</a>
+                        </li>
+                        <li class="nav-item px-lg-2 {{Request::is ('contact') ? 'active' : ''}}">
+                            <a class="nav-link" href="/contact"><span class="d-inline-block d-lg-none icon-width"><i class="fa fa-envelope"></i></span>Contact</a>
                         </li>
                         <li class="nav-item px-lg-2 py-1 {{Request::is ('contact') ? 'dashboard' : ''}}">
                             <a href="/dashboard" class="btn btn-lg btn-outline-dark mx-1 btn-sm">Logged</a>
