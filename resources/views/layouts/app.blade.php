@@ -20,11 +20,6 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
-    <link href="/css/index.css" rel="stylesheet">
-
 
     <!-- Bootstrap CSS Style -->
 
@@ -33,7 +28,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+    <link href="/css/index.css" rel="stylesheet">
 
 
 </head>
@@ -44,9 +42,11 @@
         <nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-light fixed-top">
             <div class="container"> <a class="navbar-brand d-flex align-items-center" href="#">
 
-                    <span class="ml-3 font-weight-bold"><b>WIL</b></apan>
+                    <a class="navbar-brand" href="/">
+                        <span class="ml-3 font-weight-bold">WIL</span>
+                    </a>
                 </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fas fa-bars"></i>
                 </button>
 
 
