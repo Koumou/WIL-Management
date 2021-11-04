@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
@@ -78,62 +78,23 @@
         <main class="py-4">
             @yield('content')
         </main>
-        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
-        <script type="text/javascript">
-            /* Please ❤ this if you like it! */
-            (function($) {
-                "use strict";
-
-                $(function() {
-                    var header = $(".start-style");
-                    $(window).scroll(function() {
-                        var scroll = $(window).scrollTop();
-
-                        if (scroll >= 10) {
-                            header.removeClass('start-style').addClass("scroll-on");
-                        } else {
-                            header.removeClass("scroll-on").addClass('start-style');
-                        }
+        <script>
+            $(document).ready(function() {
+                if ($(window).width() > 991) {
+                    $('.navbar-light .d-menu').hover(function() {
+                        $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+                    }, function() {
+                        $(this).find('.sm-menu').first().stop(true, true).delay(120).slideUp(100);
                     });
-                });
-
-                //Animation
-
-                $(document).ready(function() {
-                    $('body.hero-anime').removeClass('hero-anime');
-                });
-
-                //Menu On Hover
-
-                $('body').on('mouseenter mouseleave', '.nav-item', function(e) {
-                    if ($(window).width() > 750) {
-                        var _d = $(e.target).closest('.nav-item');
-                        _d.addClass('show');
-                        setTimeout(function() {
-                            _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
-                        }, 1);
-                    }
-                });
-
-                //Switch light/dark
-
-                $("#switch").on('click', function() {
-                    if ($("body").hasClass("dark")) {
-                        $("body").removeClass("dark");
-                        $("#switch").removeClass("switched");
-                    } else {
-                        $("body").addClass("dark");
-                        $("#switch").addClass("switched");
-                    }
-                });
-
-            })(jQuery);
+                }
+            });
         </script>
+
 
         <!-- Footer -->
         <footer class="bg-light text-center text-lg-start ">
