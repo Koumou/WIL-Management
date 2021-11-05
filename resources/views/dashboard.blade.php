@@ -23,7 +23,7 @@
 
             <li>
                 <a href="#" class="active">
-                    <i class='bx bx-grid-alt'></i>
+                    <i class='bx bx-user'></i>
                     <span class="links_name"> {{\Illuminate\Support\Str::limit(Auth::user()->name ?? '', 8)}}
                     </span>
                 </a>
