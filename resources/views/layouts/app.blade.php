@@ -40,7 +40,7 @@
     <div>
 
         <nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-light fixed-top">
-            <div class="container"> <a class="navbar-brand d-flex align-items-center" href="#">
+            <div class="container"> <a class="navbar-brand d-flex align-items-center" href="/">
 
                     <span class="ml-3 font-weight-bold"><b>WIL</b></apan>
                 </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
@@ -49,7 +49,28 @@
 
 
                 <div class="collapse navbar-collapse" id="navbar4">
+
                     <ul class="navbar-nav ml-auto mt-3 mt-lg-0">
+                        @guest
+                        <li class="nav-item px-lg-2 {{Request::is ('/') ? 'active' : ''}}">
+                            <a class="nav-link" href="/"> <span class="d-inline-block d-lg-none icon-width"><i class="fa fa-home"></i></span>Home</a>
+                        </li>
+                        <li class="nav-item px-lg-2 {{Request::is ('faq') ? 'active' : ''}}">
+                            <a class="nav-link" href="/faq"><span class="d-inline-block d-lg-none icon-width"><i class="fa fa-hashtag"></i></span>FAQ</a>
+                        </li>
+                        <li class="nav-item px-lg-2 {{Request::is ('about') ? 'active' : ''}}">
+                            <a class="nav-link" href="/about"><span class="d-inline-block d-lg-none icon-width"><i class="fa fa-info"></i></span>About</a>
+                        </li>
+                        <li class="nav-item px-lg-2 {{Request::is ('contact') ? 'active' : ''}}">
+                            <a class="nav-link" href="/contact"><span class="d-inline-block d-lg-none icon-width"><i class="fa fa-envelope"></i></span>Contact</a>
+                        </li>
+                        <li class="nav-item px-lg-2 py-1 {{Request::is ('contact') ? 'dashboard' : ''}}">
+                            <a href="/login" class="btn btn-lg btn-outline-dark mx-1 btn-sm">Login</a>
+                        </li>
+                        <li class="nav-item px-lg-2 py-1 {{Request::is ('contact') ? 'dashboard' : ''}}">
+                            <a href="/register" class="btn btn-lg btn-dark mx-1 btn-sm">Register</a>
+                        </li>
+                        @else
                         <li class="nav-item px-lg-2 {{Request::is ('/') ? 'active' : ''}}">
                             <a class="nav-link" href="/"> <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Home</a>
                         </li>
@@ -62,9 +83,20 @@
                         <li class="nav-item px-lg-2 {{Request::is ('contact') ? 'active' : ''}}">
                             <a class="nav-link" href="/contact"><span class="d-inline-block d-lg-none icon-width"><i class="fa fa-envelope"></i></span>Contact</a>
                         </li>
-                        <li class="nav-item px-lg-2 py-1 {{Request::is ('contact') ? 'dashboard' : ''}}">
-                            <a href="/dashboard" class="btn btn-lg btn-outline-dark mx-1 btn-sm">Logged</a>
+                        <li class="nav-item px-lg-2 {{Request::is ('register') ? 'active' : ''}}">
+                            <a href="/register" class="btn btn-lg btn-dark mx-1 btn-sm">{{\Illuminate\Support\Str::limit(Auth::user()->name ?? '', 8)}}</a>
                         </li>
+                        <li class="nav-item px-lg-2 py-1">
+                            <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"><span class="d-inline-block d-lg-none icon-width"><i class="fa fa-power-off"></i></span>
+                                {{ __('Log out') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        </li>
+                        @endguest
 
                     </ul>
                 </div>

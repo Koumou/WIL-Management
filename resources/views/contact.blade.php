@@ -2,12 +2,12 @@
 
 @section('content')
 <div class="container pt-3">
-    <div class="row pb-4">
+    <div class="row pb-2">
         <div class="col-lg-12">
             <div class="pt-5">
                 <h3 class="pt-4"><b>Contact Us</b></h3>
             </div>
-            <small class="pl-2">We are here for you.</small>
+            <p class="pl-2">In need of any other information about CPUT WIL service, please provide us with your conduct details on the form below and a consultant will get back to you. Alternately you can.</p>
         </div>
     </div>
 
@@ -16,7 +16,7 @@
             <div class="card-body justify-content-center text-align-center ">
                 <h5 class="card-title"><i class="fa fa-envelope pl-4 pr-2 " style="font-size:16px;color:#f47a60; vertical-align:baseline;"></i> Email</h5>
                 <div class="hr-color-1a pb-3 pt-0"></div>
-                <p class="card-text pl-4">info@cput-wil.com</p>
+                <p class="card-text pl-4">info@cput.com</p>
 
             </div>
         </div>
@@ -24,7 +24,7 @@
             <div class="card-body justify-content-center text-align-center">
                 <h5 class="card-title"> <i class="fa fa-phone pl-4 pr-2 " style="font-size:20px;color:#7fe7dc; vertical-align:baseline;"></i> Phone Number</h5>
                 <div class="hr-color-1b pb-3 pt-0"></div>
-                <span class="card-text pl-4">(+27) 671 0000 000012</span>
+                <span class="card-text pl-4">(+27) 21 959 676</span>
 
             </div>
         </div>

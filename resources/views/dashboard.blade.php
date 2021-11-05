@@ -20,8 +20,17 @@
             <span class="logo_name">Cput</span>
         </div>
         <ul class="nav-links">
+
             <li>
                 <a href="#" class="active">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name"> {{\Illuminate\Support\Str::limit(Auth::user()->name ?? '', 8)}}
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
                     <i class='bx bx-grid-alt'></i>
                     <span class="links_name">Dashboard</span>
                 </a>
@@ -51,9 +60,17 @@
                 </a>
             </li>
             <li class="log_out">
-                <a href="/">
-                    <i class='bx bx-log-out'></i>
-                    <span class="links_name">Log out</span>
+                <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"> <i class='bx bx-log-out'></i>
+                    <span class="links_name">
+
+                        {{ __('Log out') }}
+
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                    </span>
                 </a>
             </li>
         </ul>
